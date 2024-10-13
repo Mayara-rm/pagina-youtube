@@ -86,13 +86,11 @@ h2 {
     object-fit: cover; /* A imagem preenche o contêiner sem distorcer */
 }
 
-
 header{
     display: flex;
     justify-content: space-between;/* Distribui os itens com espaço entre eles */
     align-items: center;/* Alinha verticalmente os itens no centro */
-    padding: 0px 16px 0px 16px;
-
+    padding: 10px 16px 10px 16px;
 }
 
 #menu-lateral{
@@ -105,6 +103,13 @@ header{
     flex-direction: row;
 }
 
+.container-campo-pesquisar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
 .botao_nav{
 width: 40px;
 height: 40px;
@@ -115,21 +120,34 @@ border: none;
 cursor: pointer;
 border-radius: 30px;
 }
-.botao_nav button:hover{
+.botao_nav:hover {
     background: rgba(85, 85, 85, 1); /* Exemplo de hover com um leve fundo */
 }
 
+.botao_micro{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    align-items: center;
+    background:rgba(85, 85, 85, 1);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    }
+
 main{
+    
     display: flex;
     justify-content: center;
     gap: 50px;
+    padding: 10px 20px 10px 80px;
 }
 
 .play-video{
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-   
 }
 
 .perfil{
@@ -195,9 +213,23 @@ button{
     padding: 0px 10px 0px 10px;
     color: rgb(255, 255, 255);
     background-color:rgba(39, 39, 39, 1) ;
-    border: none;
+    border: 1px;
     border-radius: 30px;
 }
+
+.icone_like{
+    width: 24px; /* Defina o tamanho desejado */
+    height: 24px; /* Defina o tamanho desejado */
+    object-fit: cover; /* A imagem preenche o contêiner sem distorcer */
+    border-right: solid;
+    border-width: 0.5px;
+    border-color: white;
+    padding: 0px 10px 0px 0px;
+    align-items: center;
+    display: flex;
+    
+}
+
 
 .botao_maisOpcoes{
     display: flex;
@@ -269,9 +301,30 @@ button{
 
 .info-video-titulo{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
 }
 
 aside{
+    width: 30%;
     flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.icone-video{
+    width: 20px; /* Defina o tamanho desejado */
+    height: 20px; /* Defina o tamanho desejado */
+    object-fit: cover; /* A imagem preenche o contêiner sem distorcer */
+}
+
+.botao_curtir{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    align-items: center;
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
 }
